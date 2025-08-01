@@ -12,9 +12,9 @@ import TapToReveal from "@/components/TapToReveal"
 import MusicPlayer from "@/components/MusicPlayer"
 
 // Change this to your anniversary date
-const ANNIVERSARY_DATE = "2025-05-25T00:00:00"
+const ANNIVERSARY_DATE = "2025-08-02T00:00:00"
 // Change this to the date you got together
-const TOGETHER_DATE = "2022-01-01T00:00:00"
+const TOGETHER_DATE = "2019-08-02T00:00:00"
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -57,10 +57,13 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: "/image.png", alt: "Us together" },
+    { src: "/image1.png", alt: ""You + Me = Always 💑⏱️" },
     { src: "/image2.png", alt: "Special moment" },
-    { src: "/image.png", alt: "Happy times" },
-    { src: "/image2.png", alt: "Memories" },
+    { src: "/image3.png", alt: "Just us — in love, in sync 💑💞" } ,
+    { src: "/image4.png", alt: "Us together" },
+    { src: "/image5.png", alt: "💖Two hearts, one time — holding on to forever 🕰️❤️🤝" },
+    { src: "/image6.png", alt: "Happy times" },
+    { src: "/image7.png", alt: "📸 The moment she said ‘I love you too’ — forever captured, forever cherished 💖" },
   ]
 
   // Change this message according to you
