@@ -2,14 +2,27 @@
 
 This folder contains public assets for the anniversary website:
 
-## Files to add:
-- `bg.mp3` - Background music file
-- Images for the photo gallery (e.g., `photo1.jpg`, `photo2.jpg`, `photo3.jpg`)
-- `favicon.ico` - Website favicon
+## 📸 REQUIRED PHOTOS TO ADD:
 
-## Instructions:
-1. Add your own background music as `bg.mp3`
-2. Replace placeholder images with your own photos
-3. Add a custom favicon if desired
+**Replace these with your personal photos:**
 
-Note: The current implementation uses emoji placeholders for images. Replace the placeholder divs in `app/page.js` with actual `<img>` tags pointing to your images.
+1. **`first-date.jpg`** - Photo from your first date
+2. **`together.jpg`** - Photo of you two together 
+3. **`love.jpg`** - A romantic photo showing your love
+
+## 🎵 MUSIC FILE:
+- **`bg.mp3`** - Add your favorite romantic song here
+
+## 🎨 OPTIONAL:
+- **`favicon.ico`** - Custom website icon
+
+## 📝 TO ADD YOUR PHOTOS:
+1. Copy your 3 favorite photos to this `public/` folder
+2. Rename them to:
+   - `first-date.jpg` (for "Our First Date")
+   - `together.jpg` (for "Together Forever")
+   - `love.jpg` (for "My Heart is Yours")
+3. They should be JPG, PNG, or WEBP format
+4. Recommended size: 800x600 pixels or larger
+
+**The website will automatically use your photos once you add them!**

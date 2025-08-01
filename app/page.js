@@ -229,9 +229,12 @@ export default function Home() {
             <div className="bg-white/80 rounded-lg p-4 shadow-lg overflow-hidden">
               <div className="w-full h-48 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Romantic couple on first date" 
+                  src="/first-date.jpg" 
+                  alt="Our First Date" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1518568814500-bf0f8d125f8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  }}
                 />
               </div>
               <p className="text-center mt-2 text-gray-700 font-medium">Our First Date</p>
@@ -266,6 +269,18 @@ export default function Home() {
           >
             <p className="text-white text-xl font-semibold">
               Happy Anniversary, Beautiful! 🎉💖
+            </p>
+          </motion.div>
+
+          {/* Designer Credit */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2 }}
+            className="text-center mt-8 border-t border-white/20 pt-6"
+          >
+            <p className="text-white/70 text-sm font-medium">
+              Designed with 💖 by <span className="font-semibold text-white">YASH KEWAT</span>
             </p>
           </motion.div>
         </div>
