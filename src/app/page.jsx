@@ -9,6 +9,7 @@ import PhotoGallery from "@/components/PhotoGallery"
 import Message from "@/components/Message"
 import FloatingElements from "@/components/FloatingElements"
 import TapToReveal from "@/components/TapToReveal"
+import MusicPlayer from "@/components/MusicPlayer"
 
 // Change this to your anniversary date
 const ANNIVERSARY_DATE = "2025-05-25T00:00:00"
@@ -19,6 +20,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [showContent, setShowContent] = useState(false)
   const [showTapToReveal, setShowTapToReveal] = useState(false)
+  const [playSong, setPlaySong] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,6 +48,11 @@ export default function Home() {
   const handleReveal = () => {
     setShowTapToReveal(false)
     setShowContent(true)
+
+    // Start music after a delay
+    setTimeout(() => {
+      setPlaySong(true)
+    }, 1000)
   }
 
   // Add your photos here
@@ -119,6 +126,7 @@ Me`
           <TapToReveal key="tap-to-reveal" onReveal={handleReveal} />
         ) : (
           <>
+            <MusicPlayer playSong={playSong} />
             <motion.div
               key="content"
               initial={{ opacity: 0 }}
