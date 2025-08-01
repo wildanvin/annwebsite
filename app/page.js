@@ -190,7 +190,7 @@ export default function Home() {
                 From the moment you came into my life, everything changed for the better. Your smile lights up my darkest days, your laughter is my favorite melody, and your love is my greatest treasure.
               </p>
               <p>
-                Thank you for being my partner, my best friend, and my greatest love. Here's to many more years of adventures, inside jokes, and endless love.
+                Thank you for being my partner, my best friend, and my greatest love. Here&apos;s to many more years of adventures, inside jokes, and endless love.
               </p>
               <p className="text-center font-semibold text-pink-600">
                 I love you more than words can express! 💕
