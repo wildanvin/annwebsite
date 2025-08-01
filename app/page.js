@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
 
@@ -11,6 +11,7 @@ export default function Home() {
   const [currentSection, setCurrentSection] = useState('loader')
   const [timeLeft, setTimeLeft] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const audioRef = useRef(null)
 
   useEffect(() => {
     // Loader timer
@@ -55,9 +56,19 @@ export default function Home() {
     })
   }
 
-  const toggleMusic = () => {
-    setIsPlaying(!isPlaying)
-    // Add music logic here when you add the audio file
+  const toggleMusic = async () => {
+    if (!audioRef.current) return
+    
+    try {
+      if (isPlaying) {
+        audioRef.current.pause()
+      } else {
+        await audioRef.current.play()
+      }
+      setIsPlaying(!isPlaying)
+    } catch (error) {
+      console.log('Audio play failed:', error)
+    }
   }
 
   if (currentSection === 'loader') {
@@ -150,10 +161,20 @@ export default function Home() {
   if (currentSection === 'message') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-300 to-purple-400 p-8">
+        {/* Hidden Audio Element */}
+        <audio
+          ref={audioRef}
+          loop
+          preload="auto"
+        >
+          <source src="https://www.soundjay.com/misc/sounds/magic-chime-02.mp3" type="audio/mpeg" />
+          <source src="https://www.soundjay.com/misc/sounds/magic-chime-02.wav" type="audio/wav" />
+        </audio>
+        
         {/* Music Control */}
         <button
           onClick={toggleMusic}
-          className="fixed top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-colors"
+          className="fixed top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-colors shadow-lg"
         >
           {isPlaying ? '⏸️' : '▶️'}
         </button>
@@ -205,23 +226,35 @@ export default function Home() {
             transition={{ delay: 1 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            <div className="bg-white/80 rounded-lg p-4 shadow-lg">
-              <div className="w-full h-48 bg-gradient-to-br from-pink-200 to-purple-200 rounded-lg flex items-center justify-center">
-                <span className="text-4xl">📸</span>
+            <div className="bg-white/80 rounded-lg p-4 shadow-lg overflow-hidden">
+              <div className="w-full h-48 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="Romantic couple on first date" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
-              <p className="text-center mt-2 text-gray-700">Our First Date</p>
+              <p className="text-center mt-2 text-gray-700 font-medium">Our First Date</p>
             </div>
-            <div className="bg-white/80 rounded-lg p-4 shadow-lg">
-              <div className="w-full h-48 bg-gradient-to-br from-purple-200 to-pink-200 rounded-lg flex items-center justify-center">
-                <span className="text-4xl">💑</span>
+            <div className="bg-white/80 rounded-lg p-4 shadow-lg overflow-hidden">
+              <div className="w-full h-48 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="Couple together forever" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
-              <p className="text-center mt-2 text-gray-700">Together Forever</p>
+              <p className="text-center mt-2 text-gray-700 font-medium">Together Forever</p>
             </div>
-            <div className="bg-white/80 rounded-lg p-4 shadow-lg">
-              <div className="w-full h-48 bg-gradient-to-br from-pink-200 to-rose-200 rounded-lg flex items-center justify-center">
-                <span className="text-4xl">❤️</span>
+            <div className="bg-white/80 rounded-lg p-4 shadow-lg overflow-hidden">
+              <div className="w-full h-48 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="Heart symbol love" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
-              <p className="text-center mt-2 text-gray-700">My Heart is Yours</p>
+              <p className="text-center mt-2 text-gray-700 font-medium">My Heart is Yours</p>
             </div>
           </motion.div>
 
