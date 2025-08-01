@@ -57,7 +57,7 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: "/image1.png", alt: ""You + Me = Always 💑⏱️" },
+    { src: "/image1.png", alt: "You + Me = Always 💑⏱️" },
     { src: "/image2.png", alt: "Special moment" },
     { src: "/image3.png", alt: "Just us — in love, in sync 💑💞" } ,
     { src: "/image4.png", alt: "Us together" },
