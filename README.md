@@ -34,6 +34,7 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/Anuj579/anniversary-site.git
 cd anniversary-site
+hello there
 ```
 
 2. **Install dependencies**
@@ -72,4 +73,5 @@ npm run dev
 
 Thanks for checking out this project! 💗  
 If you like it, **give it a ⭐** and share the love!
+
 # anniversary-site-master
