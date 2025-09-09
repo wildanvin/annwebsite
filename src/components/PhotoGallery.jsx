@@ -69,7 +69,7 @@ export default function PhotoGallery({ photos }) {
                 transition={{ delay: 0.3 }}
                 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 text-center mb-12 animate-gradient"
             >
-                Our Precious Moments
+                Nuestros momentos más preciados
             </motion.h2>
 
             <motion.div className="flex flex-wrap justify-center gap-10 md:gap-12" >

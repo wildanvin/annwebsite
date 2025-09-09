@@ -60,7 +60,7 @@ export default function MusicPlayer({ playSong }) {
                 whileTap={{ scale: 0.9 }}
                 onClick={togglePlayback}
                 className="bg-white/80 rounded-full cursor-pointer p-3 shadow-lg flex items-center justify-center text-pink-600 hover:bg-pink-50 transition-colors"
-                aria-label={isPlaying ? "Pause music" : "Play music"}
+                aria-label={isPlaying ? "Pausar música" : "Reproducir música"}
             >
                 <motion.div
                     animate={

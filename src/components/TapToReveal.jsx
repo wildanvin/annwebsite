@@ -79,7 +79,7 @@ export default function TapToReveal({ onReveal }) {
                     </motion.div>
 
                     <motion.h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 animate-gradient">
-                        Your Anniversary Surprise Awaits!
+                        ¡La sorpresa de nuestro aniversario te espera!
                     </motion.h2>
 
                     <motion.div
@@ -93,7 +93,7 @@ export default function TapToReveal({ onReveal }) {
                             ease: "easeInOut",
                         }}
                     >
-                        <span>Tap here to reveal</span>
+                        <span>Toca aquí para descubrir</span>
                         <motion.span
                             animate={{
                                 opacity: [0, 1, 0],
