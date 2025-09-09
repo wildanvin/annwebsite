@@ -57,22 +57,22 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: "/image1.jpg", alt: "You + Me = Always 💑⏱️" },
-    { src: "/image2.jpg", alt: "Special moment" },
-    { src: "/image3.jpg", alt: "Just us — in love, in sync 💑💞" } ,
-    { src: "/image4.jpg", alt: "Us together" },
-    { src: "/image5.jpg", alt: "💖Two hearts, one time — holding on to forever 🕰️❤️🤝" },
-    { src: "/image6.jpg", alt: "Happy times" },
-    { src: "/image7.jpg", alt: "📸 The moment she said ‘I love you too’ — forever captured, forever cherished 💖" },
+    { src: "/image1.jpg", alt: "Tú + Yo, para siempre 💑⏱️" },
+    { src: "/image2.jpg", alt: "Instante especial" },
+    { src: "/image3.jpg", alt: "Solo nosotros, en sintonía 💑💞" },
+    { src: "/image4.jpg", alt: "Juntos" },
+    { src: "/image5.jpg", alt: "Dos corazones, un mismo tiempo 🕰️❤️🤝" },
+    { src: "/image6.jpg", alt: "Momentos felices" },
+    { src: "/image7.jpg", alt: "📸 Cuando dijo 'yo también te amo' 💖" },
   ]
 
   // Change this message according to you
-  const message = `Dear Love,
-This journey with you has been the most beautiful adventure of my life. Every moment spent with you feels like a blessing, and I cherish each day we've been together.
-From our first meeting to today, you've filled my life with joy, laughter, and unconditional love. Your smile brightens my darkest days, and your love gives me strength when I need it most.
-As we celebrate another year together, I want you to know that my love for you grows stronger with each passing day. You are my best friend, my confidant, and my soulmate.
-Happy Anniversary, my love! Here's to many more years of creating beautiful memories together.
-With all my heart,
+  const message = `Mi amor,
+Cada paso a tu lado ha sido la mejor parte de mi historia. Contigo el tiempo se siente ligero y cada día trae una nueva razón para sonreír.
+Desde aquel primer momento hasta hoy, llenas mi mundo de calma, risas y cariño sincero. Tu mirada levanta mis días grises y tu abrazo me hace sentir invencible.
+Hoy celebramos otro año juntos y no puedo evitar amar más todo lo que somos. Gracias por ser mi compañera, mi confidente y mi destino favorito.
+Feliz aniversario. Que sigamos creando recuerdos que hagan brillar el futuro.
+Con todo mi corazón,
 Yash Kewat`
 
   return (
@@ -117,10 +117,10 @@ Yash Kewat`
               <div className="absolute -top-16 -left-16 w-32 h-32 text-5xl animate-float">🌸</div>
               <div className="absolute -bottom-28 -right-14 w-32 h-32 text-5xl animate-float-delay">🌺</div>
 
-              <h1 className="text-4xl md:text-5xl py-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-4 animate-gradient">
-                Our Anniversary is Coming!
-              </h1>
-              <p className="text-xl text-purple-700 font-medium">The countdown to our special day ❤️</p>
+                <h1 className="text-4xl md:text-5xl py-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-4 animate-gradient">
+                  ¡Nuestro aniversario está cerca!
+                </h1>
+                <p className="text-xl text-purple-700 font-medium">Cuenta regresiva para nuestro día especial ❤️</p>
             </motion.div>
 
             <Countdown targetDate={ANNIVERSARY_DATE} onComplete={handleCountdownComplete} />
@@ -151,10 +151,10 @@ Yash Kewat`
                   🎊
                 </div>
 
-                <h1 className="text-4xl md:text-6xl py-1 md:py-2 px-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-3 animate-gradient">
-                  Happy Anniversary!
-                </h1>
-                <p className="text-xl text-purple-700 font-medium">Every moment with you is a blessing ❤️</p>
+                  <h1 className="text-4xl md:text-6xl py-1 md:py-2 px-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-3 animate-gradient">
+                    ¡Feliz aniversario!
+                  </h1>
+                  <p className="text-xl text-purple-700 font-medium">Cada momento contigo es un regalo ❤️</p>
               </motion.div>
 
               <DaysTogether startDate={TOGETHER_DATE} animationDuration={3} />
@@ -169,7 +169,7 @@ Yash Kewat`
                 transition={{ delay: 1.5 }}
                 className="text-center mt-16 mb-8 text-pink-600"
               >
-                <p className="text-lg font-medium">Made with ❤️ by YASH KEWAT</p>
+                <p className="text-lg font-medium">Hecho con ❤️ por YASH KEWAT</p>
               </motion.footer>
             </motion.div>
           </>

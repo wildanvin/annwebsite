@@ -44,10 +44,10 @@ export default function Countdown({ targetDate, onComplete }) {
     }, [targetDate, onComplete])
 
     const timeUnits = [
-        { label: "Days", value: timeLeft.days, emoji: "🌞" },
-        { label: "Hours", value: timeLeft.hours, emoji: "⏰" },
-        { label: "Minutes", value: timeLeft.minutes, emoji: "⌛" },
-        { label: "Seconds", value: timeLeft.seconds, emoji: "✨" },
+        { label: "Días", value: timeLeft.days, emoji: "🌞" },
+        { label: "Horas", value: timeLeft.hours, emoji: "⏰" },
+        { label: "Minutos", value: timeLeft.minutes, emoji: "⌛" },
+        { label: "Segundos", value: timeLeft.seconds, emoji: "✨" },
     ]
 
     const containerVariants = {
@@ -174,7 +174,7 @@ export default function Countdown({ targetDate, onComplete }) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}
             >
-                Until our special day ❤️
+                Hasta nuestro día especial ❤️
             </motion.p>
         </div>
     )
