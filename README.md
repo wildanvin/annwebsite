@@ -34,7 +34,6 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/Anuj579/anniversary-site.git
 cd anniversary-site
-hello there
 ```
 
 2. **Install dependencies**
