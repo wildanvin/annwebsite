@@ -57,13 +57,13 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: '/image1.jpg', alt: 'Tú + Yo, para siempre 💑⏱️' },
-    { src: '/image2.jpg', alt: 'Instante especial' },
-    { src: '/image3.jpg', alt: 'Solo nosotros, en sintonía 💑💞' },
-    { src: '/image4.jpg', alt: 'Juntos' },
-    { src: '/image5.jpg', alt: 'Dos corazones, un mismo tiempo 🕰️❤️🤝' },
-    { src: '/image6.jpg', alt: 'Momentos felices' },
-    { src: '/image7.jpg', alt: "📸 Cuando dijo 'yo también te amo' 💖" },
+    { src: '/image1.jpeg', alt: 'Tú + Yo, para siempre 💑⏱️' },
+    { src: '/image2.jpeg', alt: 'Instante especial' },
+    { src: '/image3.jpeg', alt: 'Solo nosotros, en sintonía 💑💞' },
+    { src: '/image4.jpeg', alt: 'Juntos' },
+    { src: '/image5.jpeg', alt: 'Dos corazones, un mismo tiempo 🕰️❤️🤝' },
+    { src: '/image6.jpeg', alt: 'Momentos felices' },
+    { src: '/image7.jpeg', alt: "📸 Cuando dijo 'yo también te amo' 💖" },
   ]
 
   // Change this message according to you
