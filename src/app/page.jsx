@@ -57,23 +57,25 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: '/image1.jpeg', alt: 'Tú + Yo, para siempre 💑⏱️' },
-    { src: '/image2.jpeg', alt: 'Instante especial' },
-    { src: '/image3.jpeg', alt: 'Solo nosotros, en sintonía 💑💞' },
-    { src: '/image4.jpeg', alt: 'Juntos' },
-    { src: '/image5.jpeg', alt: 'Dos corazones, un mismo tiempo 🕰️❤️🤝' },
-    { src: '/image6.jpeg', alt: 'Momentos felices' },
-    { src: '/image7.jpeg', alt: "📸 Cuando dijo 'yo también te amo' 💖" },
+    { src: '/image1.jpeg', alt: 'Tú + Yo 💑⏱️' },
+    { src: '/image2.jpeg', alt: 'En Baños' },
+    { src: '/image3.jpeg', alt: 'Chilleandooo 💑💞' },
+    { src: '/image4.jpeg', alt: 'Con dinosaurios' },
+    { src: '/image5.jpeg', alt: 'En Baños x2 ❤️' },
+    { src: '/image6.jpeg', alt: 'Te amo' },
+    { src: '/image7.jpeg', alt: '📸 El 26 de Abril de 2025 💖' },
   ]
 
   // Change this message according to you
-  const message = `Mi amor,
-Cada paso a tu lado ha sido la mejor parte de mi historia. Contigo el tiempo se siente ligero y cada día trae una nueva razón para sonreír.
-Desde aquel primer momento hasta hoy, llenas mi mundo de calma, risas y cariño sincero. Tu mirada levanta mis días grises y tu abrazo me hace sentir invencible.
-Hoy celebramos otro año juntos y no puedo evitar amar más todo lo que somos. Gracias por ser mi compañera, mi confidente y mi destino favorito.
-Feliz aniversario. Que sigamos creando recuerdos que hagan brillar el futuro.
-Con todo mi corazón,
-Yash Kewat`
+  const message = `Estimada Pau,
+
+Muchas gracias por compartir conmigo estos 6 meses.
+
+En este tiempo me has enseñado muchas cosas y también a conocerme más a mí mismo.
+Me inspiras a seguir esforzándome y a ser mejor persona y profesional. Estoy muy agradecido por habernos conocido, ser noviecitos y pasar este tiempo juntos.
+De aquí nos faltan un millón de días más por estar juntos. Te prometo que me esforzaré al máximo y daré lo mejor de mí para ser un buen equipo y una bonita y millonaria ohana. 
+
+Te amo mucho y estaremos juntos hasta viejitos. `
 
   return (
     <main className='min-h-screen overflow-x-hidden bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100'>
@@ -163,10 +165,10 @@ Yash Kewat`
                 </div>
 
                 <h1 className='text-4xl md:text-6xl py-1 md:py-2 px-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-3 animate-gradient'>
-                  ¡Feliz aniversario!
+                  ¡Felices 6 meses!
                 </h1>
                 <p className='text-xl text-purple-700 font-medium'>
-                  Cada momento contigo es un regalo ❤️
+                  Eres mi suerte ❤️
                 </p>
               </motion.div>
 
@@ -182,9 +184,7 @@ Yash Kewat`
                 transition={{ delay: 1.5 }}
                 className='text-center mt-16 mb-8 text-pink-600'
               >
-                <p className='text-lg font-medium'>
-                  Hecho con ❤️ por YASH KEWAT
-                </p>
+                <p className='text-lg font-medium'>Hecho con ❤️ por Dani</p>
               </motion.footer>
             </motion.div>
           </>

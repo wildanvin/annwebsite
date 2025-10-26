@@ -14,7 +14,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
       const now = new Date()
       const diffTime = Math.abs(now - start)
       const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-      return 153
+      return 184
     }
 
     const days = calculateDays()
@@ -86,7 +86,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
           transition={{ delay: 0.3 }}
           className='text-3xl md:text-4xl md:py-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 text-center mb-10 animate-gradient'
         >
-          Nuestro viaje juntos
+          Muchas gracias por
         </motion.h2>
 
         <div className='flex flex-col items-center justify-center'>
@@ -143,7 +143,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
             transition={{ delay: 0.5 }}
             className='text-2xl md:text-3xl text-pink-500 font-medium mb-8'
           >
-            Días increíbles juntos
+            increíbles días juntos
           </motion.div>
 
           <motion.div
@@ -158,11 +158,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
             className='text-center text-lg text-gray-600 max-w-2xl'
-          >
-            Cada día a tu lado es un regalo. Desde nuestro primer "hola" hasta
-            hoy, estar contigo es pura magia. Brindemos por muchos más días
-            llenos de amor, risas y recuerdos inolvidables.
-          </motion.p>
+          ></motion.p>
 
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
