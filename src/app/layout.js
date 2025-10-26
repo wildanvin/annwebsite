@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: '6 mesesitos :3',
-  description: 'Una celebración de nuestro amor',
+  description: 'Especial para mi Pau 💖',
 }
 
 export default function RootLayout({ children }) {
